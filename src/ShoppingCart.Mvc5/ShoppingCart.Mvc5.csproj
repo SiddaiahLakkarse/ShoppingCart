@@ -1,0 +1,7 @@
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup><Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration><Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform><ProjectGuid>{B8E13D9A-0A02-4E47-B9B5-1EAD7C5B5E01}</ProjectGuid><OutputType>Library</OutputType><RootNamespace>ShoppingCart.Mvc5</RootNamespace><AssemblyName>ShoppingCart.Mvc5</AssemblyName><TargetFrameworkVersion>v4.8</TargetFrameworkVersion><MvcBuildViews>true</MvcBuildViews></PropertyGroup>
+	<ItemGroup><Reference Include="System" /><Reference Include="System.Web" /><Reference Include="System.Web.Mvc" /><Reference Include="System.Net.Http" /><Reference Include="System.Web.Routing" /><Reference Include="System.Configuration" /></ItemGroup>
+	<ItemGroup><Compile Include="Controllers\*.cs" /><Compile Include="Models\*.cs" /><Compile Include="Global.asax.cs" /></ItemGroup>
+	<ItemGroup><Content Include="Views\**\*" /><Content Include="Content\**\*" /><Content Include="Global.asax" /><None Include="Web.config" /></ItemGroup>
+  <ItemGroup><PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.9" /><PackageReference Include="Newtonsoft.Json" Version="13.0.3" /></ItemGroup>
+</Project>

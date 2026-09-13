@@ -1,0 +1,2 @@
+@model ShoppingCart.Mvc5.Models.LoginModel
+@{ Layout = null; }<!doctype html><html><body><h1>Login</h1>@using (Html.BeginForm()) { @Html.ValidationSummary() <label>Username</label>@Html.TextBoxFor(x => x.Username)<label>Password</label>@Html.PasswordFor(x => x.Password)<button type="submit">Login</button> }</body></html>
